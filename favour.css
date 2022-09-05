@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+   
+    scrollbar-track-color: aliceblue;
+    scrollbar-width: 2px;
+    scrollbar-color: #fdc134;
+}
+
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fdc134;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+
+
+
+header{
+    height: 100vh;
+    width: 100%;   
+    background-color: #213b52;
+}
+
+nav{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+nav h1{
+    color: white;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+nav span{
+    color: #fdc134;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .bx-menu{
+    color: #fdc134;
+    font-size: 30px;
+} */
+.hamburger-menu{
+    background-color: transparent;
+    width: 30px;
+    display: none;
+}
+.menulogo{
+    width: 30px;
+    background-color: #fdc134;
+    height: 4px;
+    margin-bottom: 3px;
+    border-radius: 30px;
+}
+nav ul{
+    margin-left: 300px;
+}
+nav ul li{
+    margin-left: 20px;
+    display: inline;
+    padding-left: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.get-started{
+    border-radius: 50px;
+    padding: 4px 25px 6px 25px;
+    border: 2px solid #fdc134;
+}
+.get-started:hover{
+    background-color: #fdc134;
+    color: grey;
+}
+.landing-page{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: white;
+    padding-bottom: 30px;
+}
+.landing-page .left{
+    width: 50%;
+}
+.landing-page .left h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.landing-page .left span{
+    color: #fdc134;
+}
+.landing-page .left p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.landing-page .left .second{
+    margin-bottom: 75px;
+}
+.landing-page .left a{
+    background-color: #fdc134;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+.landing-page .left a:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid #fdc134;
+}
+
+.landing-page .right{
+    width: 50%;
+}
+.landing-page .right img{
+    width: 100%;
+}
+
+.rule{
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    color: #848484;
+    border: none;
+}
+.mini-rule{
+    width: 38px;
+    margin: auto;
+    height: 5px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fdc134;
+    /* background-attachment: fixed; */
+    margin-top: -3px;
+}
+
+/* ABOUT HARVOXX SECTION */
+.about{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+.about-content{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.about-content .image-container{
+    width: 50%;
+}
+.about-content .image-container img{
+    width: 100%;
+}
+.about-content .text-container{
+    width: 50%;
+    margin-left: 50px;
+}
+.first-text h1{
+    font-size: 40px;
+    color: #213b52;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.first-text p{
+    font-size: 17px;
+    color: grey;
+    margin-bottom: 30px;
+}
+.first-text a{
+    color: #213b52;
+    font-style: italic;
+    text-decoration: none;
+}
+.second-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.diversity{
+    display: flex;
+    /* margin-right: 10px; */
+    font-size: 17px;
+    color: #848484;
+    width: 50%;
+    order: 1;
+}
+.impact{
+    display: flex;
+    font-size: 17px;
+    /* margin-left: 40px; */
+    color: #848484;
+    width: 50%;
+    order: 1;
+}
+.content h3{
+    color: #213b52;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.content h3:hover{
+    color: #fdc134;
+}
+.third-text{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.commitment-to-client{
+    display: flex;
+    /* margin-right: 10px; */
+    font-size: 17px;
+    color: #848484;
+    width: 50%;
+    order: 1;
+}
+.integrity{
+    display: flex;
+    font-size: 17px;
+    /* margin-left: 10px; */
+    color: #848484;
+    width: 50%;
+    order: 1;
+}
+.text-container i{
+    margin-right: 10px;
+    font-size: 35px;
+    color: #fdc134;
+}
+/* OUR SERVICES SECTION */
+.our-services{
+    width: 100%;
+    background-image: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+};
+
+.our-services-content{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+.first-group{
+    text-align: center;
+    padding: 80px;
+}
+.first-group h1{
+    color: #213b52;
+    font-size: 30px;
+    margin-bottom: 55px;
+    font-family: 'Poppins', sans-serif;
+}
+.second-group{
+    display: flex;
+}
+.second-group .left,
+.second-group .right{
+    width: 50%;
+    margin: 15px;
+}
+.second-group .image-container{
+    width: 100%;
+    margin: 10px;
+}
+
+.second-group .image-container img{
+    width: 100%;
+}
+.second-group .box{
+    width: 75%;
+    /* height: 200px; */
+    /* text-align: center; */
+    /* margin-left: 60px; */
+    margin: auto;
+    background-color: white;
+    position: relative;
+    margin-top: -90px;
+    padding: 25px;
+}
+
+.second-group .box h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #213b52;
+}
+
+.second-group .box p{
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #777777;
+}
+
+.second-group .box a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #777777;
+}
+.second-group .box a:hover{
+    color: #fdc134;
+}
+
+
+
+.second-group .right .box,
+.second-group .left .box{
+    border-top: 5px solid transparent;
+}
+
+.second-group .right:hover .box,
+.second-group .left:hover .box{
+    border-top: 5px solid orange;
+}
+/* PRICING SECTION */
+.pricing{
+    width: 100%;
+    background-image: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+    margin-bottom: 50px;
+}
+
+.pricing-content{
+    width: 90%;
+    margin-bottom: 30px;
+    display: block;
+}
+.pricing-content h1{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    color: #213b52;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+.price-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pricing-image img{
+    width: 100%;
+    height: 100vh;
+    margin-left: 65px;
+}
+/* CONTACT SECTION */
+.contact{
+    width: 100%;
+    background-image: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+    height: fit-content;
+}
+.contact-content{
+    width: 90%;
+    margin: auto;
+}
+.contact-content h1{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 50px;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    color: #213b52;
+}
+.contact-group{
+    width: 100%;
+    display: flex;
+} 
+    
+.contact-group .left{
+    width: 45%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.contact .left h3{
+    color: #777777;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+.contact .left .first{
+   
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 20px 0 30px 0;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.contact .left .second{
+    
+    display: flex;
+    gap: 25px;
+}
+.contact .left .second .email,
+.contact .left .second .call{
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 20px 0 30px 0;
+    background: #fff;
+    width: 50%;
+}
+   
+.contact .left .second .email a{
+    text-decoration: none;
+    color: #213b52;
+    font-weight: bold;
+}
+
+.contact .left .second .call a{
+    text-decoration: none;
+    color: #444444;
+}
+.contact .left i{
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fdc134;
+    border: 1px dotted #fdc134;
+    border-radius: 30px;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-top: 6px;
+}
+.contact-group .right{
+    width: 40%;
+    background-color: transparent;
+}
+.contact .right .form{
+    width: 100%;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 30px;
+    background: #fff;
+    margin: auto;
+}
+.contact .right .form .subject{
+    width: 98%;
+}
+
+.contact .right .form .subject,
+.yname, .yemail, .message{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    margin-bottom: 16px;
+
+}
+.contact .right .form .yname, .yemail{
+    width: 48%;
+    margin-right: 3px;
+}
+.message{
+    width: 98%;
+}
+.placeholder{
+    color: #495057;
+    font-size: 18px;
+}
+.form-button{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-button a{
+    text-decoration: none;
+    color: black;
+    background-color: #fdc134;
+    padding: 13px 50px;
+    border: 1px white;
+    font-weight: bold;
+}
+/* FOOTER SECTION */
+footer{
+    background: url(images/footer-bg.jpg); 
+
+}
+.footer-txt h1{
+     font-family: 'Poppins', sans-serif;
+}
+.footer-bag{
+    height: 460px;
+    background-color: rgba(33, 59, 82, 0.85);
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+.footer-txt {
+    padding-top: 100px;
+}
+.footer-txt h1 {
+font-size: 2.5rem;
+/* margin-bottom: 30px; */
+padding-bottom: 30px;
+}
+
+#subscribe-email{
+    width: 35%;
+    border-radius: 30px;
+    height: 40px;
+    border: none;
+    margin-top: 40px;
+}
+#subscribe{
+    border-radius: 30px;
+    height: 40px;
+    width: 12%;
+    margin-left: -55px;
+    border: none;
+    background-color: #fdc134;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Arial", sans-serif;
+}
+input::placeholder{
+    padding-left: 18px;
+    color: #495057;
+    font-family: "Arial", sans-serif;
+}
+.copyright{
+    text-align: left;
+    padding-top: 115px;
+    padding-left: 120px;
+    font-size: 0.9rem;
+
+}
+
+
+@media (max-width: 1000px) {
+    *{
+         /* margin: 0; */
+        padding: 0;
+        box-sizing: border-box;
+    } 
+    body{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        padding-bottom: 2px;
+        align-items: center;
+    }
+    nav h1{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+   
+    nav ul li{
+        display: none;
+    }
+    nav span{
+        display: inline;
+    }
+    /* nav ul{
+        width: 100%;
+        height: 90vh;
+        text-align: left;
+        background-color: #fff;
+        display: block;
+    } */
+    .hamburger-menu{
+        display: block; 
+    } 
+    .landing-page{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-bottom: 800px;
+    }
+
+    .landing-page .right,
+    .landing-page .left{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }   
+      
+    .landing-page .left p{
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+    }
+    .landing-page .left h2{
+        font-size: 25px;
+    }
+
+    /* ABOUT */
+    .about{
+        width: auto;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .about-content .image-container{
+        width: 100%;
+    }
+    .about-content .image-container img{
+        width: 100%;
+    }
+    .about-content .text-container{
+        width: 100%;
+        margin: auto;
+    }
+    .second-text, .third-text{
+        flex-direction: column;
+    }
+    .diversity, .impact, .commitment-to-client, .integrity{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+   /* OUR SERVICES */
+    .our-services-content{
+        width: 100%;
+    }
+    .second-group{
+        flex-direction: column;
+    }
+    .second-group .left,
+    .second-group .right{
+        width: 100%;
+        margin: auto;
+    }
+    .second-group .image-container{
+        /* margin-right: 10px; */
+        margin: auto;
+    }
+    /* PRICING */
+    .pricing{
+        height: 60vh;
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    .pricing-image{
+        margin: auto;
+     }
+     .pricing-image img{
+      height: 100%; 
+      /* margin-right: 20px;
+      margin-top: 70px; */
+      align-self: center;
+      margin: auto;
+     }
+     .contact{
+        width: auto;
+     }
+     .contact-group{
+        flex-direction: column;
+        /* margin: auto; */
+     }
+     .contact-group .left{
+        width: 100%;
+        margin: auto;
+     }
+     .contact .left .first{
+        margin-bottom: 25px;
+     }
+     .contact .left .second{
+        flex-direction: column;
+     }
+     .contact .left .second .email,
+     .contact .left .second .call,
+     .contact-group .right{
+        width: 100%;
+     } 
+
+     .footer-txt h1{
+        width: 100%;
+     }
+     #subscribe-email{
+        width: 75%;
+     }
+     #subscribe{
+        width: 30%;
+     }
+     .copyright{
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+     }
+
+     }
+
+
+
+
+
+
+
